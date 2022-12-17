@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-
 import {
   Box,
   alpha,
@@ -19,8 +18,7 @@ import CloseTwoToneIcon from '@mui/icons-material/CloseTwoTone';
 import HeaderButtons from './Buttons';
 import HeaderUserbox from './Userbox';
 import SearchBar from './SearchBar'
-import { useSelector } from 'react-redux';
-// import HeaderMenu from './Menu';
+// import { useSelector } from 'react-redux';
 
 const HeaderWrapper = styled(Box)(
   ({ theme }) => `
@@ -45,8 +43,8 @@ function Header() {
   const { sidebarToggle, toggleSidebar } = useContext(SidebarContext);
   const theme = useTheme();
 
-  const userLogin = useSelector((state) => state.userLogin);
-  const { userInfo } = userLogin;
+  // const userLogin = useSelector((state) => state.userLogin);
+  // const { userInfo } = userLogin;
 
   return (
     <HeaderWrapper

@@ -1,29 +1,17 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-
 import { useEffect, useRef, useState } from 'react';
-
-import { NavLink } from 'react-router-dom';
-
 import {
   Avatar,
   Box,
   Button,
-  Divider,
   Hidden,
   lighten,
-  List,
-  ListItem,
-  ListItemText,
   Popover,
   Typography,
   styled
 } from '@mui/material';
 
-import InboxTwoToneIcon from '@mui/icons-material/InboxTwoTone';
 import ExpandMoreTwoToneIcon from '@mui/icons-material/ExpandMoreTwoTone';
-import AccountBoxTwoToneIcon from '@mui/icons-material/AccountBoxTwoTone';
 import LockOpenTwoToneIcon from '@mui/icons-material/LockOpenTwoTone';
-import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../../../../redux/actions/authActions';
@@ -79,6 +67,7 @@ function HeaderUserbox() {
       navigate('/', { replace: true });
       dispatch({ type: LOGOUT });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navigate, userInfo]);
 
   const logoutHandler = () => {

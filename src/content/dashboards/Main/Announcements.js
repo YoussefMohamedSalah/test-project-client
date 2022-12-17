@@ -1,4 +1,4 @@
-import { Box, Card, Stack } from "@mui/material";
+import { Card, Stack } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import AnnouncementsList from "./AnnouncementsList";
 import CardHeader from "../../../components/CardHeader";
